@@ -102,6 +102,7 @@ h2 {
 
 .photos img {
     width: 30%;
+    height: 250px;
     margin: 1.5%;
     border-radius: 25px;
 }
@@ -134,11 +135,11 @@ h1 {
     color: white;
 }
 
-@media only screen and (max-width: 1048px) {
+@media only screen and (max-width: 1048px) and (min-width: 640px) {
     .photos img {
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .about-photos img {
@@ -148,7 +149,15 @@ h1 {
     }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 640px) and (min-width: 320px) {
+
+    .testimonial h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+
     .navigation {
         display: flex;
         justify-content: center;
@@ -192,31 +201,37 @@ h1 {
 
     .photos img {
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        height: 250px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     li {
         display: block;
         text-align: center;
     }
+
+    .about-intro {
+        background-repeat: none;
+    }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 320px) and (min-width: 200px) {
     .testimonial h1 {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.5rem;
+        font-size: 25px;
     }
 
     .about-intro {
         height: 20rem;
         padding-top: 1rem;
-
     }
 
     .photos img {
         width: 100%;
+        height: 250px;
+        margin: 10px 10px;
     }
 }
