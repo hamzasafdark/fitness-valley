@@ -33,7 +33,8 @@ body {
 .about-intro {
     height: 30rem;
     padding-top: 1rem;
-    background-image: url('./assets/images/cast-iron-dumbbell-weights.avif');
+    background-image: url('./assets/images/modern-loft-gym-fitness.avif');
+    background-size: 100%;
     background-position: center;
     background-repeat: none;
 }
@@ -65,8 +66,7 @@ li {
 .summary,
 .about-summary,
 .testimonial,
-.photos,
-.meetup {
+.photos {
     margin: 4em auto;
 }
 
@@ -109,22 +109,6 @@ h2 {
     width: 45%;
     margin: 2%;
     border-radius: 25px;
-}
-
-.meetup {
-    margin-bottom: 2rem;
-}
-
-.meetup img {
-    width: 50%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-.meetup h1 {
-    color: rgb(255, 255, 255);
-    text-align: center;
 }
 
 h1 {
@@ -203,10 +187,7 @@ h1 {
 
 @media only screen and (max-width: 320px) {
     .testimonial h1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .about-intro {
