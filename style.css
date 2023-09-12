@@ -66,7 +66,8 @@ li {
 .summary,
 .about-summary,
 .testimonial,
-.photos {
+.photos,
+.meetup {
     margin: 4em auto;
 }
 
@@ -109,6 +110,22 @@ h2 {
     width: 45%;
     margin: 2%;
     border-radius: 25px;
+}
+
+.meetup {
+    margin-bottom: 2rem;
+}
+
+.meetup img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.meetup h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 h1 {
@@ -187,7 +204,10 @@ h1 {
 
 @media only screen and (max-width: 320px) {
     .testimonial h1 {
-        font-size: 1.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
     }
 
     .about-intro {
